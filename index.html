@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="dm-tabs.js" defer></script>
+    <script src="main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="task">
+          <h2>Домашнє завдання</h2>
+          <h4>Мінімум</h4>
+          <p>Створи таби використовуючи плагіни, макет довільний.</p>
+        </div>
+
+        <div class="tabs_block">
+          <ul class="tabs">
+              <li class="active">Вкладка1</li>
+              <li>Вкладка2</li>
+              <li>Вкладка3</li>
+          </ul>
+          <div class="box visible"> 
+              <p>Содержание первой вкладки...</p>
+          </div>
+          <div class="box">
+              <p>Содержание второй вкладки...</p>
+          </div>
+          <div class="box">
+              <p>Содержание третьей вкладки...</p>
+          </div>        
+      </div>
+
+        <div class="task">
+          <h4>Норма</h4>
+          <p>Створи калькулятор.</p>
+        </div>
+
+        <div class="block-calc">
+          <form name="form">
+            <input class="calc-window" />
+          </form>
+          <table>
+            <tr>
+              <td>
+                <input type="button" value="C" onclick="c()" />
+              </td>
+              <td>
+                <input type="button" value="/" onclick="instr('/')" />
+              </td>
+              <td>
+                <input type="button" value="←" onclick="del()" />
+              </td>
+              <td>
+                <input type="button" value="X" onclick="instr('*')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="7" onclick="instr(7)" />
+              </td>
+              <td>
+                <input type="button" value="8" onclick="instr(8)" />
+              </td>
+              <td>
+                <input type="button" value="9" onclick="instr(9)" />
+              </td>
+              <td>
+                <input type="button" value="-" onclick="instr('-')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="4" onclick="instr(4)" />
+              </td>
+              <td>
+                <input type="button" value="5" onclick="instr(5)" />
+              </td>
+              <td>
+                <input type="button" value="6" onclick="instr(6)" />
+              </td>
+              <td>
+                <input type="button" value="+" onclick="instr('+')" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="button" value="1" onclick="instr(1)" />
+              </td>
+              <td>
+                <input type="button" value="2" onclick="instr(2)" />
+              </td>
+              <td>
+                <input type="button" value="3" onclick="instr(3)" />
+              </td>
+              <td rowspan="2">
+                <input class="eql" type="button" value="=" onclick="eql()" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  class="zero"
+                  type="button"
+                  value="0"
+                  onclick="instr(0)"
+                />
+              </td>
+              <td>
+                <input type="button" value="." onclick="instr('.')" />
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="task">
+          <h4>Максимум</h4>
+          <p>Створи таби не використовуючи плагіни, макет Game_ui_Tabs.psd</p>
+        </div>
+
+        <div class="block-tabs">
+          <nav class="tabs-link">
+            <a href="#tab1" class="tab-link1 tab-link">Опис</a>
+            <a href="#tab2" class="tab-link2 tab-link">Історія</a>
+            <a href="#tab3" class="tab-link3 tab-link">Закладки</a>
+          </nav>
+          <div class="tabs-info">
+            <div id="tab1" class="tab-block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas,
+              rerum! Maiores, quae magnam dolorum culpa fugiat ipsa pariatur ut
+              velit beatae, assumenda aliquid laborum hic qui iure dicta saepe,
+              cum labore neque ratione? Fuga, ducimus! Dignissimos nesciunt
+              necessitatibus aperiam iure tenetur minima eum, adipisci tempora
+              quidem, maiores unde ullam doloribus?
+            </div>
+            <div id="tab2" class="tab-block">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Obcaecati voluptate voluptas amet quas laborum nisi architecto
+              mollitia voluptates, odio, minima deserunt adipisci error aliquam
+              rem quidem excepturi! Molestias eaque ad amet possimus reiciendis
+              voluptatum numquam velit earum maxime nam natus qui expedita,
+              tempore inventore accusantium fugiat quas facilis iure magnam.
+            </div>
+            <div id="tab3" class="tab-block">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+              iusto saepe explicabo tempore beatae necessitatibus quod maxime
+              odit enim, mollitia nesciunt inventore iure ipsam facilis?
+              Reprehenderit doloribus ab amet libero hic enim magni, a quasi
+              totam fuga aspernatur aut beatae repellat tempora ex laboriosam
+              eveniet mollitia accusamus velit nostrum numquam.
+            </div>
+          </div>
+        </div>
+        <div class="block-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          temporibus odit quaerat debitis aspernatur expedita est error
+          praesentium ipsa, molestias modi consectetur tempore reiciendis,
+          laudantium sint inventore natus recusandae beatae sunt eveniet
+          officiis? Optio eaque eveniet eius sapiente voluptatum nobis adipisci
+          atque, nam est cupiditate corporis sit unde, fugit hic quis totam
+          velit nesciunt dolores earum officiis rerum quas magnam. Blanditiis
+          dolor iure cum est modi. Sit nam similique error, consequuntur maiores
+          commodi nemo, ut perspiciatis expedita distinctio quaerat. Pariatur
+          nulla incidunt facere delectus earum qui voluptatum repellat culpa
+          dicta esse. Et soluta rerum, quaerat illum impedit possimus voluptate
+          provident.
+        </div>
+        <div class="block-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          temporibus odit quaerat debitis aspernatur expedita est error
+          praesentium ipsa, molestias modi consectetur tempore reiciendis,
+          laudantium sint inventore natus recusandae beatae sunt eveniet
+          officiis? Optio eaque eveniet eius sapiente voluptatum nobis adipisci
+          atque, nam est cupiditate corporis sit unde, fugit hic quis totam
+          velit nesciunt dolores earum officiis rerum quas magnam. Blanditiis
+          dolor iure cum est modi. Sit nam similique error, consequuntur maiores
+          commodi nemo, ut perspiciatis expedita distinctio quaerat. Pariatur
+          nulla incidunt facere delectus earum qui voluptatum repellat culpa
+          dicta esse. Et soluta rerum, quaerat illum impedit possimus voluptate
+          provident.
+        </div>
+        <div class="block-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+          temporibus odit quaerat debitis aspernatur expedita est error
+          praesentium ipsa, molestias modi consectetur tempore reiciendis,
+          laudantium sint inventore natus recusandae beatae sunt eveniet
+          officiis? Optio eaque eveniet eius sapiente voluptatum nobis adipisci
+          atque, nam est cupiditate corporis sit unde, fugit hic quis totam
+          velit nesciunt dolores earum officiis rerum quas magnam. Blanditiis
+          dolor iure cum est modi. Sit nam similique error, consequuntur maiores
+          commodi nemo, ut perspiciatis expedita distinctio quaerat. Pariatur
+          nulla incidunt facere delectus earum qui voluptatum repellat culpa
+          dicta esse. Et soluta rerum, quaerat illum impedit possimus voluptate
+          provident.
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
